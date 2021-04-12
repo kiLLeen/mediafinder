@@ -1,13 +1,13 @@
-package org.nkilleen.photos;
+package org.nkilleen.mediafinder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PhotosApplication {
+public class MediaFinderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PhotosApplication.class, args);
+		SpringApplication.run(MediaFinderApplication.class, args);
 	}
 
 }

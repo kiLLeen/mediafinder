@@ -1,10 +1,10 @@
-package org.nkilleen.photos;
+package org.nkilleen.mediafinder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PhotosApplicationTests {
+class MediaFinderApplicationTests {
 
 	@Test
 	void contextLoads() {
