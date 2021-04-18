@@ -15,7 +15,7 @@ A service for indexing and finding media (photos, video, music, etc.) easily.
 1. Edit your mysql.cnf file to allow TCP connections by changing the `bind-address`. The file is typically found in the `/etc/mysql/` directory, but can be different depending on your package mangager or how you installed it. Find edit the file and then find the section `mysqld` and ensure the `bind-address` looks like the following:
 ```
 [mysqld]
-bind-address		= 0.0.0.0
+bind-address = 0.0.0.0
 ```
 2. Start and connect:
 ```
