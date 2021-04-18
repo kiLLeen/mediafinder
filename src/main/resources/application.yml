@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/photos
-    username: photos
-    password: ${PHOTOS_DB_PW}
+    url: jdbc:mysql://127.0.0.1:3306/mediafinder
+    username: mediafinder
+    password: ${MEDIAFINDER_PW}
