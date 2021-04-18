@@ -17,10 +17,13 @@ A service for indexing and finding media (photos, video, music, etc.) easily.
 [mysqld]
 bind-address = 0.0.0.0
 ```
-2. Start and connect:
+2. Initialize (see [https://dev.mysql.com/doc/refman/8.0/en/automatic-start.html](https://dev.mysql.com/doc/refman/8.0/en/automatic-start.html) and [https://dev.mysql.com/doc/refman/8.0/en/starting-server.html](https://dev.mysql.com/doc/refman/8.0/en/starting-server.html)), connect, and set a root password:
+This assumes there is no data folder setup at all. If there is one, you can skip the `sudo` command.
 ```
+sudo mysqld --initialize-insecure --user=$(whoami) &
 mysqld &
-mysql -uroot
+mysql -u root --skip-password
+alter user 'root'@'localhost' identified by 'root-password';
 ```
 3. Create the database schema:
 ```
@@ -45,6 +48,11 @@ export MEDIAFINDER_PW=password
 You can add this to your bashrc as well, so you don't have to do it again after restarting your shell:
 ```
 echo 'export MEDIAFINDER_PW=password' >> ~/.bashrc
+```
+8. Restart MySQL server:
+```
+sudo mysqladmin -u root -p shutdown
+sudo mysqld &
 ```
 
 ### Test
