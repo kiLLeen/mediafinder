@@ -78,7 +78,7 @@ exit
 
 ### Test
 
-1. Onces the server is up you should be able to go to [https://localhost:9200](https://localhost:9200) and see the information about the instance.
+1. Onces the server is up you should be able to go to [http://localhost:9200](http://localhost:9200) and see the information about the instance.
 
 ## Running the application
 
